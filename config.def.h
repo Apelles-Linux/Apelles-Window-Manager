@@ -41,8 +41,7 @@ static Sp scratchpads[] = {
 
 static const char *const autostart[] = {
 	"slstatus", NULL,
-	"pipewire", NULL,
-  "/home/ayush/.start.sh", NULL,
+  //Startup scripts
 	NULL /* terminate */
 };
 
