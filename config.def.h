@@ -42,7 +42,7 @@ static Sp scratchpads[] = {
 static const char *const autostart[] = {
 	"slstatus", NULL,
 	"pipewire", NULL,
-  "/home/<USERNAME>/.start.sh", NULL,
+  "/home/ayush/.start.sh", NULL,
 	NULL /* terminate */
 };
 
@@ -72,8 +72,8 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "STK",      tile },    /* first entry is default */
-	{ "[M]",      monocle },
+	{ "STK",      tile },    // MUST BE AT INDEX 0
+	{ "[M]",      monocle }, // MUST BE AT INDEX 1
 	{ "SPR",      spiral },
 //	{ "DWD",     dwindle },
 	{ "DCK",      deck },
@@ -168,12 +168,12 @@ static const Key keys[] = {
 	{ MODKEY|ControlMask,           XK_Tab,    view,           {0} },
 	{ MODKEY,                       XK_x,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
+//	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,	                    	XK_Tab,    cyclelayout,    {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_Tab,    cyclelayout,    {.i = -1 } },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
+	{ MODKEY,                       XK_f,      fullscreen,     {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
-	{ MODKEY,                       XK_f,      togglefullscr,  {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
