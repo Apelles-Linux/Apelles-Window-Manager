@@ -1,0 +1,57 @@
+! DWM Base Colors
+dwm.normfgcolor: #ebdbb2
+dwm.normbgcolor: #282828
+dwm.normbordercolor: #282828
+
+dwm.selfgcolor: #282828
+dwm.selbgcolor: #83a598
+dwm.selbordercolor: #83a598
+
+! Layout Settings
+dwm.borderpx: 2
+dwm.gappx: 8
+dwm.snap: 32
+dwm.showbar: 1
+dwm.topbar: 1
+
+! Window Management
+dwm.nmaster: 1
+dwm.resizehints: 1
+dwm.mfact: 0.55
+
+! Terminal Colors (for consistent theming)
+*.foreground: #ebdbb2
+*.background: #282828
+*.cursorColor: #ebdbb2
+
+! Black + DarkGrey
+*.color0: #282828
+*.color8: #928374
+
+! DarkRed + Red
+*.color1: #cc241d
+*.color9: #fb4934
+
+! DarkGreen + Green
+*.color2: #98971a
+*.color10: #b8bb26
+
+! DarkYellow + Yellow
+*.color3: #d79921
+*.color11: #fabd2f
+
+! DarkBlue + Blue
+*.color4: #458588
+*.color12: #83a598
+
+! DarkMagenta + Magenta
+*.color5: #b16286
+*.color13: #d3869b
+
+! DarkCyan + Cyan
+*.color6: #689d6a
+*.color14: #8ec07c
+
+! LightGrey + White
+*.color7: #a89984
+*.color15: #ebdbb2
